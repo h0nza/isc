@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>isc-h0nza</groupId>
+  <artifactId>isc-h0nza</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging><!--pom: phases package, install, deploy -->
+  <build>
+  	<plugins>
+  		<plugin>
+  			<groupId>com.github.eirslett</groupId>
+  			<artifactId>frontend-maven-plugin</artifactId>
+  			<version>1.4</version>
+			<configuration>
+				<nodeVersion>v6.11.0</nodeVersion><!-- install-node-and-npm -->
+				<srcdir>WebContent/src</srcdir>
+				<npmRegistryURL>http://localhost:4873</npmRegistryURL>
+			</configuration>
+<!--
+ goal install-node-and-npm => local!!! ./node/node_modules
+ goal npm: install
+ see also Makefile
+ -->
+  		</plugin>
+  	</plugins>
+  	
+  </build>
+</project>

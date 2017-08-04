@@ -1,0 +1,12 @@
+{
+  "//": {"x":"Refusing to install @types/isc as a dependency of itself"},
+  "types":"isc.index.d.ts",
+  "author":"kylemwhite",
+  "name": "@types/isc",
+  "license": "LGPL",
+  "description": "TypeScript definitions for SmartClient",
+  "version": "v11.1.20170318",
+  "keywords":["ui","widget","smartclient"],
+  "devDependencies": {
+  }
+}
